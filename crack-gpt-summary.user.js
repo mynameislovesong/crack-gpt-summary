@@ -11,10 +11,7 @@
 // @require      https://raw.githubusercontent.com/mynameislovesong/crack-gpt-summary/main/dist/shim.js
 // @require      https://raw.githubusercontent.com/mynameislovesong/crack-gpt-summary/main/dist/core.js
 // @require      https://raw.githubusercontent.com/mynameislovesong/crack-gpt-summary/main/dist/crack-route-api.js
-// @require      https://raw.githubusercontent.com/mynameislovesong/crack-gpt-summary/main/dist/crack-settings.js
-// @require      https://raw.githubusercontent.com/mynameislovesong/crack-gpt-summary/main/dist/crack-background.js
-// @require      https://raw.githubusercontent.com/mynameislovesong/crack-gpt-summary/main/dist/crack-ui.js
-// @require      https://raw.githubusercontent.com/mynameislovesong/crack-gpt-summary/main/dist/chatgpt.js
+// @require      https://raw.githubusercontent.com/mynameislovesong/crack-gpt-summary/main/dist/runtime.js
 // @match        https://crack.wrtn.ai/*
 // @match        https://chatgpt.com/*
 // @connect      crack-api.wrtn.ai
