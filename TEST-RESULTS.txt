@@ -1,0 +1,51 @@
+42 automated tests passed (includes 640 exact cleaner comparisons).
+
+PASS 6 messages paginate, reverse and terminate exactly
+PASS 501 messages paginate, reverse and terminate exactly
+PASS 1328 messages paginate, reverse and terminate exactly
+PASS Duplicate IDs appear only once; conflicting duplicates reject
+PASS Normalization preserves raw content, metadata, orphan/reroll/continue order
+PASS Existing cursor format remains readable; changed prefix never silently resets
+PASS HTTP 401 aborts without retry
+PASS HTTP 429 aborts without retry
+PASS HTTP 403 aborts without retry
+PASS HTTP 500 aborts without retry
+PASS Only explicit first-page limit error retries once with 100
+PASS Absent/malformed cookie and missing chat ID fail before network
+PASS Network/CORS exception and invalid JSON are sanitized
+PASS Malformed responses and invalid role/content never yield partial logs; historical chatId metadata is accepted
+PASS Missing/repeated cursor, empty continuing page and safety caps reject
+PASS External abort, SPA navigation, pagehide and timeout cancel in-flight fetch
+PASS Abort after JSON parsing and final-page navigation still reject
+PASS Collection module contains no DOM history or hydration path
+18 API regressions passed.
+
+PASS 640 cleaner reference strings; exactly six options; fences retained
+PASS Settings initialize once, preserve stored false, revision rejects stale writers
+PASS Ranges preserve raw messages, orphan order, manual endpoints and code fences
+PASS Progress isolation, only confirmed caller writes, concurrent reset and cancel remain protected
+PASS Source invalidation immediately before cursor write prevents storage changes
+
+PASS Standard single-file metadata; no extension API or external require
+PASS 502-message API pagination, legacy chatId, chronology, TXT, prompt, enabled Send, confirmed progress
+PASS Missing destination opens specified ChatGPT URL and receives job
+PASS Long prompt becomes a second complete TXT; no log body fallback
+PASS Large UTF-8 log crosses GM storage intact and remains file-only
+PASS missing fails closed and never records progress or retries Send
+PASS stuck fails closed and never records progress or retries Send
+PASS draft fails closed and never records progress or retries Send
+PASS unconfirmed fails closed and never records progress or retries Send
+PASS API 401 prevents ChatGPT connection and progress
+PASS A → B → A without reload uses current API and isolated progress; no idle fetch
+PASS Route change while collecting aborts without destination
+PASS Route change during disabled Send cancels receiver and preserves cursor
+PASS Two Crack and two ChatGPT tabs produce exactly one Send
+PASS ChatGPT A → other → A during preparation stays cancelled
+PASS Source pagehide cancels prepared receiver without sending
+PASS Replayed inbox cannot resend consumed job
+PASS Removed launcher repairs once and repeated injection adds no UI or receiver
+PASS Settings modal preserves six options, preset edits, reload persistence and Enter input
+19 userscript integration tests passed.
+Real Chrome DOM + emulated shared GM contract; live Tampermonkey/site verification remains separate.
+
+Actual Tampermonkey installation and live authenticated Crack/ChatGPT sending were not performed.
